@@ -8,14 +8,12 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <header
+  <body class="b">
+    <nav
       class="bg-green-600 text-white py-16 shadow-xl border-b-4 border-green-700"
     >
-      <div class="container mx-auto px-6 text-center">
-        <h1 class="text-5xl font-black">Resumo de obras!</h1>
-      </div>
-    </header>
+      <h1 class="text-5xl font-black text-center">Resumo de obras!</h1>
+    </nav>
     <main class="conteiner mx-auto px-6 py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <article
@@ -24,7 +22,12 @@
           <h3 class="text-2xl font-bold text-green-900 mb-3">
             A metamorfose: Escrita por Franz Kafka e publicada em 1915.
           </h3>
-          
+          <img
+            class="w-64 h-48 object-cover rounded-lg"
+            src="./src/img/A_metamorfose.jpg"
+            alt="Capa do livro A Metamorfose"
+          />
+
           <p class="text-green-800">
             A novela A Metamorfose, de Franz Kafka, narra a transformação do
             caixeiro-viajante Gregor Samsa em um inseto monstruoso. A obra
@@ -34,28 +37,48 @@
           </p>
         </article>
 
-           <article
+        <article
           class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-green-500 hover:-translate-y-2 transition-transform duration-300"
         >
           <h3 class="text-2xl font-bold text-green-900 mb-3">
-            Canção para ninar menino grande:Conceição Evaristo publicado em 2018.
+            Canção para ninar menino grande:Conceição Evaristo publicado em
+            2018.
           </h3>
+
+          <img
+            class="w-64 h-48 object-cover rounded-lg"
+            src="./src/img/cancao_de_ninar_menino_grande.jpg"
+            alt="Descrição da imagem"
+          />
+
           <p class="text-green-800">
-            É uma novela da escritora brasileira Conceição Evaristo, publicada em 2018, que investiga as contradições do amor, os impactos do machismo e as dores e prazeres da população negra através da escrevivência.
+            É uma novela da escritora brasileira Conceição Evaristo, publicada
+            em 2018, que investiga as contradições do amor, os impactos do
+            machismo e as dores e prazeres da população negra através da
+            escrevivência.
           </p>
         </article>
 
-          <article
+        <article
           class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-green-500 hover:-translate-y-2 transition-transform duration-300"
         >
           <h3 class="text-2xl font-bold text-green-900 mb-3">
             Verity escrito por Colleen Hoover: publicado em 2018
           </h3>
+          <img
+            class="w-64 h-48 object-cover rounded-lg"
+            src="./src/img/verity.jpg"
+            alt="Descrição da imagem"
+          />
+
           <p class="text-green-800">
-            É um thriller psicológico de suspense escrito pela norte-americana Colleen Hoover e publicado em 2018, que mergulha em uma trama mórbida de segredos familiares, obsessão e manipulação.
+            É um thriller psicológico de suspense escrito pela norte-americana
+            Colleen Hoover e publicado em 2018, que mergulha em uma trama
+            mórbida de segredos familiares, obsessão e manipulação.
           </p>
         </article>
 
+        
       </div>
     </main>
   </body>
