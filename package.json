@@ -1,28 +1,12 @@
 {
-  "name": "biblioteca_li_mo",
+  "name": "biblioteca-li-mo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "tailwindcss -i ./input.css -o ./output.css --minify",
+    "watch:css": "tailwindcss -i ./input.css -o ./output.css --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lizzy-gt/Biblioteca_Li_Mo.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Lizzy-gt/Biblioteca_Li_Mo/issues"
-  },
-  "homepage": "https://github.com/Lizzy-gt/Biblioteca_Li_Mo#readme",
   "dependencies": {
-    "bootstrap": "^5.3.8",
     "tailwindcss": "^3.4.19"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.3.3"
   }
 }
