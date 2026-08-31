@@ -3,58 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entre Pagínas</title>
+
+    <title>Entre Páginas</title>
 
     <link href="./output.css" rel="stylesheet" />
   </head>
 
-<<<<<<< HEAD
-  <body class="bg-green-40 antialiased">
+  <body class="bg-white">
+    <!-- NAVBAR -->
     <nav
-      class="bg-green-600 border-b-4 border-white py-5 text-white shadow-xl"
+      class="bg-green-600 border-b-4 border-green-700 py-5 text-white shadow-xl"
     >
       <div class="mx-auto flex max-w-6xl items-center justify-between px-6">
         <div class="flex items-center gap-3">
-          <div
-            class="flex h-10 w-10 items-center justify-center rounded-full bg-white font-black text-lg text-green-700"
-          ></div>
-          <h1 class="text-2xl font-black md:text-4xl">
-            Biblioteca Entre Livros
-          </h1>
+          <h1 class="text-2xl font-black md:text-4xl">Biblioteca</h1>
         </div>
 
         <div class="flex items-center gap-6 text-sm md:text-base">
-          <a href="#" class="transition hover:text-green-200">Início</a>
-          <a href="#" class="transition hover:text-green-200">Livros</a>
-          <a href="#" class="transition hover:text-green-200">Destaques</a>
-          <a href="#" class="transition hover:text-green-200">Contato</a>
+          <a href="#" class="transition hover:text-green-200"> Início </a>
+
+          <a href="#" class="transition hover:text-green-200"> Livros </a>
+
+          <a href="#" class="transition hover:text-green-200"> Destaques </a>
+
+          <a href="#" class="transition hover:text-green-200"> Contato </a>
         </div>
       </div>
-=======
-  <body class="bg-green-50">
-    <nav class="bg-green-600 text-white py-16 shadow-xl border-b-4 border-green-700">
-      <h1 class="text-5xl font-black text-center">Resumo de obras!</h1>
->>>>>>> 9388fb68c6d5b416f643c58223629ec7331a1872
     </nav>
 
-    <header class="bg-green-600 py-16 text-white shadow-lg">
+    <!-- CABEÇALHO -->
+    <header class="bg-white py-16 text-green-900">
       <div class="mx-auto max-w-6xl px-6 text-center">
-        <h2 class="text-5xl font-black md:text-6xl">Resumos das Obras!</h2>
-        <p class="mx-auto mt-4 max-w-2xl text-base text-green-100 md:text-lg">
-          Descubra histórias marcantes, autores e leituras que
-          transformam sua rotina.
+        <h2 class="text-5xl font-black md:text-6xl">Resumos</h2>
+
+        <p class="mx-auto mt-4 max-w-2xl text-base text-green-700 md:text-lg">
+          Descubra histórias marcantes, autores e leituras que transformam sua
+          rotina.
         </p>
       </div>
     </header>
 
-    <main class="conteiner mx-auto px-6 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- LIVROS -->
+    <main class="container mx-auto px-6 py-12">
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <!-- LIVRO 1 -->
         <article
-          class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-green-500 hover:-translate-y-2 transition-transform duration-300"
+          class="rounded-2xl border-t-8 border-green-500 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-2"
         >
-          <h3 class="text-2xl font-bold text-green-900 mb-3">
+          <h3 class="mb-3 text-2xl font-bold text-green-900">
             A metamorfose: Escrito por Franz Kafka e publicado em 1915.
           </h3>
+
           <img
             class="mb-4 h-64 w-full rounded-lg object-cover shadow-md"
             src="./src/img/A_metamorfose.jpg"
@@ -70,11 +69,12 @@
           </p>
         </article>
 
+        <!-- LIVRO 2 -->
         <article
-          class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-green-500 hover:-translate-y-2 transition-transform duration-300"
+          class="rounded-2xl border-t-8 border-green-500 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-2"
         >
-          <h3 class="text-2xl font-bold text-green-900 mb-3">
-            Canção para ninar menino grande:Conceição Evaristo publicado em
+          <h3 class="mb-3 text-2xl font-bold text-green-900">
+            Canção para ninar menino grande: Conceição Evaristo publicado em
             2018.
           </h3>
 
@@ -92,12 +92,14 @@
           </p>
         </article>
 
+        <!-- LIVRO 3 -->
         <article
-          class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-green-500 hover:-translate-y-2 transition-transform duration-300"
+          class="rounded-2xl border-t-8 border-green-500 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-2"
         >
-          <h3 class="text-2xl font-bold text-green-900 mb-3">
+          <h3 class="mb-3 text-2xl font-bold text-green-900">
             Verity: Escrito por Colleen Hoover e publicado em 2018.
           </h3>
+
           <img
             class="mb-4 h-64 w-full rounded-lg object-cover shadow-md"
             src="./src/img/verity.jpg"
@@ -111,13 +113,15 @@
           </p>
         </article>
 
+        <!-- LIVRO 4 -->
         <article
-          class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-green-500 hover:-translate-y-2 transition-transform duration-300"
+          class="rounded-2xl border-t-8 border-green-500 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-2"
         >
-          <h3 class="text-2xl font-bold text-green-900 mb-3">
+          <h3 class="mb-3 text-2xl font-bold text-green-900">
             A empregada: Escrito pela autora norte-americana Freida McFadden e
-            publicado 2022.
+            publicado em 2022.
           </h3>
+
           <img
             class="mb-4 h-64 w-full rounded-lg object-cover shadow-md"
             src="./src/img/empregada.jpg"
@@ -137,17 +141,19 @@
           </p>
         </article>
 
+        <!-- LIVRO 5 -->
         <article
-          class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-green-500 hover:-translate-y-2 transition-transform duration-300"
+          class="rounded-2xl border-t-8 border-green-500 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-2"
         >
-          <h3 class="text-2xl font-bold text-green-900 mb-3">
-            O pequeno Princípe: Escrito por Antoine de Saint-Exupéry e publicado
-            em 1943
+          <h3 class="mb-3 text-2xl font-bold text-green-900">
+            O Pequeno Príncipe: Escrito por Antoine de Saint-Exupéry e publicado
+            em 1943.
           </h3>
+
           <img
             class="mb-4 h-64 w-full rounded-lg object-cover shadow-md"
             src="./src/img/Pequeno_Principe.jpg"
-            alt="Capa do Pequeno Princípe"
+            alt="Capa do Pequeno Príncipe"
           />
 
           <p class="text-green-800">
@@ -160,19 +166,19 @@
             chegar na Terra, ele conhece uma raposa que o ensina a importância
             de criar laços e cuidar de quem amamos, revelando que o essencial é
             invisível aos olhos. Com saudades de sua flor e entendendo sua
-            responsabilidade sobre ela, o príncipe aceita a picada de uma
-            serpente venenosa para libertar sua alma do corpo físico,
-            conseguindo assim retornar ao seu planeta natal.
+            responsabilidade sobre ela, o príncipe retorna ao seu planeta natal.
           </p>
         </article>
 
+        <!-- LIVRO 6 -->
         <article
-          class="bg-white p-8 rounded-2xl shadow-lg border-t-8 border-green-500 hover:-translate-y-2 transition-transform duration-300"
+          class="rounded-2xl border-t-8 border-green-500 bg-white p-8 shadow-lg transition-transform duration-300 hover:-translate-y-2"
         >
-          <h3 class="text-2xl font-bold text-green-900 mb-3">
-            O Reino das Vozes que Não se Calam: Escrito Carolina Munhóz e Sophia
-            Abrahão publicado em 2014
+          <h3 class="mb-3 text-2xl font-bold text-green-900">
+            O Reino das Vozes que Não se Calam: Escrito por Carolina Munhóz e
+            Sophia Abrahão, publicado em 2014.
           </h3>
+
           <img
             class="mb-4 h-64 w-full rounded-lg object-cover shadow-md"
             src="./src/img/O_reino_das_vozes.jpg"
@@ -193,7 +199,9 @@
         </article>
       </div>
     </main>
-    <footer class="bg-green-600 text-green-200 py-10 text-center">
+
+    <!-- RODAPÉ -->
+    <footer class="bg-green-600 py-10 text-center text-green-100">
       <p class="font-bold">&copy; 2026 - Melhores indicações do mercado</p>
     </footer>
   </body>

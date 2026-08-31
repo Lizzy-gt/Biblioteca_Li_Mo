@@ -1,5 +1,7 @@
 # Biblioteca_Li_Mo
 
+## Nome: Monique e Luiz
+
 Primeiro criamos o projeto que teria como base o tailwind
 npm init -y 
 npm install -D tailwindcss@3
