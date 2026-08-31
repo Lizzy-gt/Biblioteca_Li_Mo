@@ -1,24 +1,43 @@
 # Biblioteca_Li_Mo
 
 Primeiro criamos o projeto que teria como base o tailwind
--npm i
--npm install tailwindcss@3
--npx tailwindcss -i input.css -o output.css --minify
--npx tailwindcss -i input.css -o output.css --watch
+npm init -y 
+npm install -D tailwindcss@3
+npx tailwindcss init - ele vai gerar o arquivo tailwind.config.js
+nele deve colocar dentro:
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+Dentro de input.css: 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npx tailwindcss -i ./input.css -o ./output.css --watch
+
+npx tailwindcss -i ./input.css -o ./output.css --minify = Para gerar a versão final do projeto
+
+
+
 
 Depois organizamos as pastas na ordem sugerida pelo professor
 
 Biblioteca_Li_Mo/
-├── src/
-│   ├── css/
-│   │   ├── input.css        ← Seu CSS base do Tailwind (@tailwind base;)
-│   │   └── style.css        ← Estilos próprios (opcional)
-│   ├── img/                 ← Suas imagens
-│   │   └── ...
+├── src/  
+│   ├── img/                 
+│   │   
 │   └── js/
 │       └── script.js
-├── dist/                    ← Pasta gerada automaticamente no build
-│   └── output.css           ← O CSS final processado pelo Tailwind
+├─            
+|__output.css  
+├── input.css         
 ├── index.html
 ├── .gitignore
 ├── LICENSE
@@ -27,16 +46,8 @@ Biblioteca_Li_Mo/
 ├── README.md
 └── tailwind.config.js
 
-Remova a pasta Tailwind: Ela é desnecessária e está duplicando arquivos de configuração.
+Depois pensamos na ideia oque seria o projeto e decidimos fazer uma pagína que conteria varias obras que teria uma breve descricao dela tipo resumos para que as pessoas se interessasem e passasem a ler mais livros.
 
 
+Criamos o site com base na estrutura que aprendemos e testamos em uma formativa escolhemos o tailwind por possuir o css praticamente pronto porem sua instalação é mais complicada.
 
-Mova o input.css para src/css/: É nele que você coloca as diretivas @tailwind base;, @tailwind components; e @tailwind utilities;.
-
-Gere o output.css em uma pasta de saída: Configure o Tailwind CLI para compilar o resultado em dist/output.css (ou diretamente em src/css/output.css) e vincule esse arquivo final no seu index.html.
-
-Comando de compilação ajustado
-
-Bash
-npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch
-No seu index.html, certifique-se de importar o CSS gerado com <link rel="stylesheet" href="./dist/output.css">.
