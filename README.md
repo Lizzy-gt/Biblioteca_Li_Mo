@@ -38,6 +38,7 @@ npx tailwindcss -i ./input.css -o ./output.css --minify = Para gerar a versão f
 #14532D → border-green-700 (Título do resumo ou dos cards)
 #BBF7D0 → hover:text-green-200 (As palavras das seções)
 #22C55E → border-green-500 (Cores dos textos de resumo e da apresentação)
+#fbbf24 → border-amber-400 (Cor do card de destaque.)
 ````
 
 ### Depois organizamos as pastas na ordem sugerida pelo professor
